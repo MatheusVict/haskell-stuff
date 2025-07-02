@@ -43,4 +43,11 @@ eval :: Expr -> [Int]
 eval (Val n) = [n | n > 0]
 eval (App o l r) = [apply o x y | x <- eval l, y <- eval r, valid o x y]
 
+-- Entry point
 
+main :: IO ()
+main = do
+  let expr = App Add (Val 2) (Val 3)
+  putStrLn ("Expression: " ++ show expr)
+  putStrLn ("Values: " ++ show (values expr))
+  putStrLn ("Evaluation: " ++ show (eval expr))
