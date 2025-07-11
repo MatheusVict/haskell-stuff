@@ -25,7 +25,7 @@ take 3 [1,2,3,4,5] -- Select the first n elements of a list
 > output: [1,2,3]
 
 ```haskell 
-dropt 3 [1,2,3,4,5] -- Remove the first n elements from a list
+drop 3 [1,2,3,4,5] -- Remove the first n elements from a list
 ```
 > output: [4,5]
 
@@ -53,3 +53,5 @@ product [1,2,3,4,5] -- Calculate the product of a list of numbers
 reverse [1,2,3,4,5] -- Reverse a list
 ```
 > output: [5,4,3,2,1]
+
+
